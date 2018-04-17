@@ -1,0 +1,130 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a:hover { text-decoration: none }
+
+.singel-trailer{
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singel-trailer:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #2a2a2a;
+    opacity: .9;
+    z-index: -1;
+  }
+  .trailer-text h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 43px;
+    position: relative;
+    line-height: 60px;
+    padding-bottom: 25px;
+  }
+  .trailer-text p {
+    color: #cacaca;
+    font-size: 18px;
+    margin: 40px 0px;
+  }
+  .border-button {
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #e54b48;
+    padding: 12px 20px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .border-button i.fa {
+    margin-left: 21px;
+  }
+  .border-button svg {
+    margin-left: 45px;
+  }
+  .trailer-text h1:after {
+    position: absolute;
+    height: 3px;
+    width: 5%;
+    left: 0;
+    bottom: 0;
+    background-color: #fa4e4b;
+    content: "";
+  }
+  .color-pricing-box {
+    background-color: #ff4f4c;
+    color: #fff;
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    right: 0;
+    top: -105px;
+  }
+  .hero-img {
+    position: relative;
+  }
+.hero-area img {
+  position: absolute;
+  left: 0;
+}
+.price {
+  padding-top: 50px;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  color: #ff8f8e;
+}
+.price-text {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+.shoping {
+  position: absolute;
+  top: 40px;
+  left: -27px;
+  color: #515151;
+  background-color: #fff;
+  font-size: 25px;
+  padding: 10px 15px;
+  box-shadow: 0 0 10px #cccccc;
+}
