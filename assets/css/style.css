@@ -1,5 +1,5 @@
 /* Base CSS */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,700,700i');
 .alignleft {
     float: left;
     margin-right: 15px;
@@ -27,12 +27,11 @@ h6 {
     font-weight: 700;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Crimson Text', serif;
 }
 a:hover { text-decoration: none }
 
 .singel-trailer{
-    background-image: url(../img/1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -42,7 +41,15 @@ a:hover { text-decoration: none }
     justify-content: center;
     align-items: center;
 }
-
+.s-bg-1{
+  background-image: url(../img/1.jpg);
+}
+.s-bg-2{
+  background-image: url(../img/2.png);
+}
+.s-bg-3{
+  background-image: url(../img/3.png);
+}
 .singel-trailer:after {
     position: absolute;
     height: 100%;
@@ -57,10 +64,13 @@ a:hover { text-decoration: none }
   .trailer-text h1 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 43px;
+    font-size: 40px;
     position: relative;
     line-height: 60px;
     padding-bottom: 25px;
+  }
+  .border-button:hover {
+    color: #fff;
   }
   .trailer-text p {
     color: #cacaca;
@@ -102,17 +112,20 @@ a:hover { text-decoration: none }
   .hero-img {
     position: relative;
   }
-.hero-area img {
-  position: absolute;
-  left: 0;
-}
-.price {
-  padding-top: 50px;
-  text-transform: uppercase;
-  font-size: 20px;
-  text-align: center;
-  color: #ff8f8e;
-}
+  .shoping:hover {
+    color: #515151;
+  }
+  .hero-area img {
+    position: absolute;
+    left: 0;
+  }
+  .price {
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    color: #ff8f8e;
+  }
 .price-text {
   text-align: center;
   font-size: 40px;
@@ -128,3 +141,23 @@ a:hover { text-decoration: none }
   padding: 10px 15px;
   box-shadow: 0 0 10px #cccccc;
 }
+.hero-area .owl-dots {
+  position: absolute;
+  right: 120px;
+  top: 50%;
+}
+.hero-area .owl-dots .owl-dot {
+  font-size: 25px;
+  color: #747474;
+  display: block;
+  border-left: 2px solid #555;
+  padding: 20px 15px !important;
+}
+.hero-area .owl-dots .owl-dot.active {
+  border-color: #e54b48;
+  color: #fff;
+}
+
+.hero-area .owl-dots .owl-dot:nth-child(1) span::before{content: "01"}
+.hero-area .owl-dots .owl-dot:nth-child(2) span::before{content: "02"}
+.hero-area .owl-dots .owl-dot:nth-child(3) span::before{content: "03"}
